@@ -1,0 +1,234 @@
+:root{
+    padding: 0px ;
+    margin: 0px;
+    --background-colour : #59253a;
+    --text-colour: white;
+    --headind-colour : #78244c;
+    background-color: var(--background-colour);
+}
+*{
+    padding: 0px ;
+    margin: 0px;
+    overflow-x: hidden;
+    
+   
+}
+.body{
+    overflow-x: hidden;
+}
+
+    
+
+
+.header{
+    position: relative;
+    background-color: #78244c;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+}
+#navbar{
+    position: absolute;
+    right: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30vw;
+}
+#navbar ul{
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+
+    
+}
+#navbar ul li{
+    text-decoration: none;
+    display: inline-block   ;
+    cursor: pointer;
+    padding: 6px 10px;
+    color: var(--text-colour) ;
+    transition: 0.3s ease;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar ul li:hover{
+    color: rgb(250, 217, 217);
+}
+.intro{
+    display: flex;
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    padding: 100px 50px;
+    left: 13%;
+    top: 100px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+  
+
+}
+.body1{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    overflow: hidden;
+}
+.intro h2{
+    font-size: 3em;
+    color: var(--text-colour);
+    font-family: 'Poppins', sans-serif;
+}
+.intro h1{
+    color:#ad2a6a ;
+    font-size: 6em;
+    position: absolute;
+    top: 170px;
+    left: 230px;
+    font-family: 'Poppins', sans-serif;
+}
+.intro p{
+    color: var(--text-colour);
+    position: absolute;
+    top: 330px;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+.footer{
+ 
+    position: absolute;
+    width: 100vw;
+    height: 70px;
+    background-color: var(--headind-colour);
+    bottom: 0;
+}
+#logo{
+    position: absolute;
+    color: var(--text-colour);
+    left: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#contact-form{
+    background-color: aqua;
+    height: 600px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+    }
+    #navbar{
+        position: fixed;
+        width: 70vw;
+        background-color: var(--headind-colour);
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+    #navbar ul{
+        flex-direction: column;
+        
+    }
+    #navbar ul li{
+        padding: 40px;
+        font-size: 1.5em;
+    }
+    .header{
+        position: relative;
+        background-color: #78244c;
+        display: flex;
+        width: 100vw;
+        height: 90px;
+    }
+    #logo{
+        
+        
+        color: var(--text-colour);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+      
+       }
+       .intro h2{
+        font-size: 1.8em;
+        color: var(--text-colour);
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        padding: 0;
+        top: 100px;
+        left: 50px;
+    }
+    .intro h1{
+        color:#ad2a6a ;
+        font-size: 3em;
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        left: 150px;
+        top: 150px;
+    }
+    .intro p{
+        color: var(--text-colour);
+        position: absolute;
+        top: 250px;
+        font-size: 1em;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+        line-height: 30px;
+    }
+    .intro{
+        display: flex;
+        position: relative;
+        width: 70vw;
+        overflow: hidden;
+        padding: 0;
+        left: 0; 
+        top: 0;
+    
+    } 
+    .body1{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0;
+    }  
+    
+
+    
+}

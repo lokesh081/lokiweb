@@ -1,0 +1,6 @@
+if(solve(input)){
+        outputSolution(input);
+    }else{
+        var textElement = document.getElementsByClassName('text-box');
+        textElement.innerHTML = 'Sorry';
+    } 
